@@ -5,3 +5,4 @@ RUN rm -rf /var/www/html/index.html
 ADD index.html /var/www/html
 RUN service apache2 restart
 RUN service apache2 status
+RUN apt-get update -y
